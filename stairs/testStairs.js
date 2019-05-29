@@ -26,4 +26,4 @@ let testCase = (num, exp) => {
     }
 }
 
-testMain();``
+testMain();

@@ -1,0 +1,29 @@
+{
+  "name": "problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buySellStocks.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "unit.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgod2/problems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgod2/problems/issues"
+  },
+  "homepage": "https://github.com/bgod2/problems#readme"
+}
