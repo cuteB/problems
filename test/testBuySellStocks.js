@@ -1,4 +1,4 @@
-let {buySellStocks} = require('../buySellStocks.js');
+let {buySellStocks} = require('../arrays/buySellStocks.js');
 
 let test = require('unit.js');
 
@@ -13,16 +13,16 @@ describe('Test Buy Sell stocks', function() {
         assert.equal(act, exp);
     })
 
-    it('increasing', function() {
-        let arr = [1,2,3,4,5,6,7,8,9,10];
+    it('short', function() {
+        let arr = [1,2];
         let act = buySellStocks(arr);
-        let exp = 9;
+        let exp = 1;
 
         assert.equal(act, exp);
     })
 
-    it('decreasing', function() {
-        let arr = [10,9,8,7,6,5,4,3,2,1];
+    it('one', function() {
+        let arr = [1];
         let act = buySellStocks(arr);
         let exp = 0;
 
@@ -35,6 +35,14 @@ describe('Test Buy Sell stocks', function() {
         let exp = 6;
 
         assert.equal(act, exp);
+    }
+
+    it('null', function() {
+        let arr = null;
+        let act = buySellStocks(arr);
+        let exp = null;
+
+        assert.equal(act, exp);
     })
 
     it('ups and downs 2', function() {
@@ -45,10 +53,11 @@ describe('Test Buy Sell stocks', function() {
         assert.equal(act, exp);
     })
 
-    it('last increase', function() {
-        let arr = [9,8,7,6,5,4,5];
+    it('long', function() {
+        let arr = [65,32,12,14,5,15,23,65,4,44,21,32,56,18,111];
         let act = buySellStocks(arr);
-        let exp = 1
+        let exp = 107;
+
 
         assert.equal(act, exp);
     })
