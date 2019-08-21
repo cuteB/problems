@@ -35,7 +35,7 @@ describe('Test Buy Sell stocks', function() {
         let exp = 6;
 
         assert.equal(act, exp);
-    }
+    })
 
     it('null', function() {
         let arr = null;
